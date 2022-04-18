@@ -1,0 +1,11 @@
+python ../train.py \
+    --lr 2e-4 \
+    --epochs 1000 \
+    --batch_size 16 \
+    --module up \
+    --save_path experiments_DADA \
+    --filter_cameras 1 \
+    --save_name CDC_Panasonic \
+    --cuda 6 \
+    --test_per_epoch 1 \
+    --test_interval 5 \

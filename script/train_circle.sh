@@ -1,0 +1,11 @@
+python train.py \
+    --lr 1e-4 \
+    --epochs 600 \
+    --batch_size 8 \
+    --module circle \
+    --save_path experiments_DADA \
+    --filter_cameras 2 \
+    --save_name CDC_circle_Sony \
+    --cuda 6 \
+    --test_per_epoch 1 \
+    --test_interval 5 \

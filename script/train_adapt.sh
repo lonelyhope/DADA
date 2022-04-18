@@ -1,0 +1,12 @@
+python ../train_adapt.py \
+    --lr 1e-4 \
+    --batch_size 2 \
+    --s_camera 2 --t_camera 1 \
+    --save_path experiments_DADA \
+    --save_name DADA_Sony_to_Panasonic \
+    --cuda 0 \
+    --epochs 500 \
+    --test_per_epoch 1 \
+    --test_interval 500 \
+    --save_iter 10000 \
+    --restore 0
