@@ -4,7 +4,7 @@ Pytorch code of CVPR-2022 paper: Dual Adversarial Adaptation for Cross-Device Re
 
 
 
-# Requirements
+## Requirements
 
 - Pytorch == 1.5.1
 - torchvision == 0.6.0
@@ -13,7 +13,7 @@ Pytorch code of CVPR-2022 paper: Dual Adversarial Adaptation for Cross-Device Re
 
 
 
-# Usage
+## Usage
 
 ### Data Preparation
 
@@ -21,7 +21,7 @@ Download the [DRealSR](https://github.com/xiezw5/Component-Divide-and-Conquer-fo
 
 
 
-## Training
+### Training
 
 1. Train up-sampling model:
 
@@ -46,7 +46,7 @@ Download the [DRealSR](https://github.com/xiezw5/Component-Divide-and-Conquer-fo
 
    
 
-## Testing
+### Testing
 
 ```shell
 cd script
@@ -55,6 +55,6 @@ sh test_adapt.sh
 
 
 
-## Pretrained model
+### Pretrained models
 
 Pretrianed models will be uploaded soon.
