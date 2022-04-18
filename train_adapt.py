@@ -1,8 +1,5 @@
 import argparse
-from ast import parse
-from PIL.Image import SAVE
 import os
-import shutil
 
 from constant import *
 from solver import Solver
@@ -28,8 +25,8 @@ def get_opt():
     parser.add_argument('--save_interval', type=int, default=100)
     parser.add_argument('--save_iter', type=int, default=10e9)
     
-    parser.add_argument('--s_camera', type=int, default=1, help='source camera')
-    parser.add_argument('--t_camera', type=int, default=2, help='target camera')
+    parser.add_argument('--s_camera', type=int, default=1, help='source camera index')
+    parser.add_argument('--t_camera', type=int, default=2, help='target camera index')
 
     parser.add_argument('--t_len', type=int, default=0, help='target camera img number')
     parser.add_argument('--valid_num', type=int, default=40, help='validation number for target camera')
@@ -60,7 +57,7 @@ def train_adapt(opt, train=True):
 
     # get dataset and init parameters
     trn_dset = Adapt_dataset(opt, opt.trn_path, split='train')
-    init_path = path[IP]['circle_model'][CAMERA[opt.s_camera]]
+    init_path = path['circle_model'][CAMERA[opt.s_camera]]
     if train:
         val_dset = Adapt_dataset(opt, opt.tst_path, split='test')
         module.init_all(init_path)

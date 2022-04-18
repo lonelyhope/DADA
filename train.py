@@ -1,7 +1,6 @@
 import argparse
 import torch
 import os
-import shutil
 
 from solver import Solver
 from tools.utils import mkdir
@@ -63,7 +62,7 @@ def train_solver(opt, train):
     if not train:
         module.load_model(os.path.join(opt.save_path, opt.resume))
     if train and 'circle' in opt.module:
-        module.load_up(path[IP]['sr_model'][CAMERA[opt.filter_cameras[0]]])
+        module.load_up(path['sr_model'][CAMERA[opt.filter_cameras[0]]])
     if train and opt.pretrain:
         module.load_model(opt.pretrain)
 
