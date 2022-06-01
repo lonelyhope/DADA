@@ -19,18 +19,20 @@ Pytorch code of CVPR-2022 paper: Dual Adversarial Adaptation for Cross-Device Re
 
 Download the [DRealSR](https://github.com/xiezw5/Component-Divide-and-Conquer-for-Real-World-Image-Super-Resolution) dataset and set the corresponding dataset path in `constant.py`.
 
+Image files for different cameras are listed in `./image_list/train.csv` and `./image_list/test.csv` (for `x4` scale factor).
+
 
 
 ### Training
 
-1. Train up-sampling model:
+1. Train the up-sampling model:
 
    ```shell
    cd script
    sh train_up.sh
    ```
 
-2. Train up-sampling model and down-sampling model:
+2. Train up-sampling model and down-sampling model collabotively:
 
    ```shell
    cd script
