@@ -1,6 +1,10 @@
 # DADA
 
-Pytorch code of CVPR-2022 paper: Dual Adversarial Adaptation for Cross-Device Real-World Image Super-Resolution.
+Pytorch code of CVPR-2022 paper: [Dual Adversarial Adaptation for Cross-Device Real-World Image Super-Resolution.](https://arxiv.org/abs/2205.03524v1)
+
+![fig1](./imgs/fig1.png)
+
+![fig2](./imgs/fig2.png)
 
 
 
@@ -60,3 +64,17 @@ sh test_adapt.sh
 ### Pretrained models
 
 Pretrianed models will be uploaded soon.
+
+
+
+## Citiation
+
+```
+@article{xu2022dual,
+  title={Dual Adversarial Adaptation for Cross-Device Real-World Image Super-Resolution},
+  author={Xu, Xiaoqian and Wei, Pengxu and Chen, Weikai and Mao, Mingzhi and Lin, Liang and Li, Guanbin},
+  journal={arXiv preprint arXiv:2205.03524},
+  year={2022}
+}
+```
+
